@@ -1,0 +1,71 @@
+// Cores
+$cor-primaria: #fff3e0;
+$cor-secundaria: #ffad23;
+$cor-terciaria: #fffcf7;
+$cor-quaternaria: #5e3900;
+$cor-textos: #252525;
+$cor-branca: #fff;
+
+// Tipografia
+@mixin tipo-1($tamanho) {
+  font-family: "Righteous", cursive;
+  color: $cor-textos;
+  @if $tamanho == 96 {
+    font-size: 6em;
+  } @else if $tamanho == 36 {
+    font-size: 2.25em;
+  } @else if $tamanho == 24 {
+    font-size: 1.5em;
+  } @else if $tamanho == 18 {
+    font-size: 1.125em;
+  } @else if $tamanho == 10 {
+    font-size: 0.625em;
+  }
+}
+
+@mixin tipo-2($tamanho) {
+  font-family: "Roboto", sans-serif;
+  color: $cor-textos;
+  @if $tamanho == 18 {
+    font-size: 1.125em;
+  } @else if $tamanho == 14 {
+    font-size: 0.875em;
+  }
+}
+
+// Container
+@mixin container {
+  padding: 0 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+// Responsividade
+@mixin d($dispositivo) {
+  @if $dispositivo == tablet {
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      @content;
+    }
+  } @else if $dispositivo == mobile {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  }
+}
+
+// Botões
+
+@mixin button-1 {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid $cor-secundaria;
+  cursor: pointer;
+}

@@ -1,0 +1,56 @@
+.services {
+  @include flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.img-services img {
+  border-radius: 50%;
+}
+
+.services-text {
+  h2 {
+    @include tipo-1(36);
+    margin-top: 40px;
+  }
+  p {
+    @include tipo-2(14);
+    margin-top: 25px;
+  }
+}
+
+.services-list {
+  margin-top: 40px;
+  @include flex;
+  @include tipo-1(18);
+  .list-1 li {
+    margin-bottom: 35px;
+    &:nth-child(1)::before {
+      content: url(../img/pedido-on.svg);
+      margin-right: 15px;
+    }
+    &:nth-child(2)::before {
+      content: url(../img/servico-24h.svg);
+      margin-right: 15px;
+    }
+    &:nth-child(3)::before {
+      content: url(../img/cozinha.svg);
+      margin-right: 15px;
+    }
+  }
+  .list-2 li {
+    margin-bottom: 35px;
+    &:nth-child(1)::before {
+      content: url(../img/ambiente.svg);
+      margin-right: 15px;
+    }
+    &:nth-child(2)::before {
+      content: url(../img/preco.svg);
+      margin-right: 15px;
+    }
+    &:nth-child(3)::before {
+      content: url(../img/chefs.svg);
+      margin-right: 15px;
+    }
+  }
+}

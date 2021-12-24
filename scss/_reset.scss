@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $cor-terciaria;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  @include container;
+  @include d(tablet) {
+    max-width: 768px;
+  }
+  @include d(mobile) {
+    max-width: 340px;
+  }
+}

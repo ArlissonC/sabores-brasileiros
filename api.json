@@ -1,0 +1,58 @@
+[
+  {
+    "img": "./img/macarronada.png",
+    "prato": "Macarronada",
+    "stars": "./img/quatro-estrelas.svg",
+    "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "preco": 35.00
+  },
+  {
+    "img": "./img/batata-frita.png",
+    "prato": "Batata Frita",
+    "stars": "./img/tres-estrelas.svg",
+    "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "preco": 25.00
+  },
+  {
+    "img": "./img/feijoada.png",
+    "prato": "Feijoada",
+    "stars": "./img/cinco-estrelas.svg",
+    "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "preco": 40.00
+  },
+  {
+    "img": "./img/tacaca.png",
+    "prato": "Tacacá",
+    "stars": "./img/quatro-estrelas.svg",
+    "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "preco": 60.00
+  },
+  {
+    "img": "./img/buxada.png",
+    "prato": "Buxada de Bode",
+    "stars": "./img/tres-estrelas.svg",
+    "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "preco": 45.00
+  },
+  {
+    "img": "./img/pao-de-queijo.png",
+    "prato": "Pão de Queijo",
+    "stars": "./img/cinco-estrelas.svg",
+    "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "preco": 15.00
+  },
+  {
+    "img": "./img/cuca.png",
+    "prato": "Cuca",
+    "stars": "./img/duas-estrelas.svg",
+    "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "preco": 30.00
+  },
+  {
+    "img": "./img/coxinha.png",
+    "prato": "Coxinha",
+    "stars": "./img/cinco-estrelas.svg",
+    "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "preco": 10.00
+  }
+]
