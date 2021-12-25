@@ -25,7 +25,7 @@ const filterSelect = region => {
   if (region == "all") {
     region = "";
   }
-  document.querySelectorAll('.box').forEach(item => {
+  document.querySelectorAll('.menu-dishes > .box').forEach(item => {
     item.classList.remove('hidden');
     if (!(item.className.indexOf(region) > -1)) {
       item.classList.add('hidden');
