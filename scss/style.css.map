@@ -8,7 +8,7 @@
         "_introducao.scss",
         "_pratos-populares.scss",
         "_servicos.scss",
-        "_menu.scss"
+        "_menu-pratos.scss"
     ],
     "names": [],
     "file": "style.css"
