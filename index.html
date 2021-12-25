@@ -62,7 +62,7 @@
         <ul class="list-1">
           <li>Pedido Online</li>
           <li>Serviço 24/7</li>
-          <li>Cozinha Limpa</li>
+          <li>Entrega rápida</li>
         </ul>
         <ul class="list-2">
           <li>Ambiente Agradável</li>
@@ -72,7 +72,20 @@
       </div>
     </div>
   </section>
+  <!-- Menu -->
+  <section class="container menu-dishes-main">
+    <h2>Nosso menu</h2>
+    <div class="buttons-menu">
+      <button class="btn" onclick="filterSelect('all')">Todos</button>
+      <button class="btn" onclick="filterSelect('norte')">Norte</button>
+      <button class="btn" onclick="filterSelect('nordeste')">Nordeste</button>
+      <button class="btn" onclick="filterSelect('sul')">Sul</button>
+      <button class="btn" onclick="filterSelect('sudeste')">Sudeste</button>
+    </div>
+    <div class="menu-dishes"></div>
+  </section>
   <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

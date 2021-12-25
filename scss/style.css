@@ -291,6 +291,7 @@ li {
   padding: 10px;
   border-radius: 50px;
   border: 1px solid #ffad23;
+  background: #fff3e0;
   cursor: pointer;
 }
 
@@ -311,6 +312,7 @@ li {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-bottom: 250px;
 }
 
 .img-services img {
@@ -364,7 +366,7 @@ li {
 }
 
 .services-list .list-1 li:nth-child(3)::before {
-  content: url(../img/cozinha.svg);
+  content: url(../img/entrega.svg);
   margin-right: 15px;
 }
 
@@ -385,5 +387,71 @@ li {
 .services-list .list-2 li:nth-child(3)::before {
   content: url(../img/chefs.svg);
   margin-right: 15px;
+}
+
+.menu-dishes-main {
+  height: 930px;
+}
+
+.menu-dishes-main h2 {
+  font-family: "Righteous", cursive;
+  color: #252525;
+  font-size: 2.25em;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.buttons-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 150px;
+}
+
+.buttons-menu button {
+  font-family: "Righteous", cursive;
+  color: #252525;
+  font-size: 1.125em;
+  padding: 5px 30px;
+  background: #fff3e0;
+  border: 1px solid #ffad23;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 70px;
+}
+
+.menu-dishes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 18px;
+}
+
+.menu-dishes .box {
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

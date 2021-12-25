@@ -1,0 +1,36 @@
+.menu-dishes-main {
+  height: 930px;
+  h2 {
+    @include tipo-1(36);
+    text-align: center;
+    margin-bottom: 55px;
+  }
+}
+
+.buttons-menu {
+  @include flex;
+  padding: 0 150px;
+  button {
+    @include tipo-1(18);
+    padding: 5px 30px;
+    background: $cor-primaria;
+    border: 1px solid $cor-secundaria;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 70px;
+  }
+}
+
+.menu-dishes {
+  @include flex;
+  justify-content: flex-start;
+  gap: 18px;
+  .box {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.hidden {
+  display: none;
+}

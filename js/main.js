@@ -9,13 +9,14 @@ const fetchData = async () => {
   try {
     const response = await fetch('api.json');
     const data = await response.json();
-    loadDishes(data, dishes);
+    loadDishes(data);
+    menuDishes(data);
   } catch (error) {
     console.log(error);
   }
 }
 
-const loadDishes = (data, dishes) => {
+const loadDishes = data => {
   data.forEach((item, index) => {
     dishes.innerHTML += `
     <div class="box">
@@ -27,7 +28,7 @@ const loadDishes = (data, dishes) => {
             <div class="add-cart">
               <span>${item.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span>
               <button type="button" onclick="addCart('${item.prato}', 
-              '${item.preco}', ${index})">Adicionar ao carrinho</button>
+              '${item.preco}', ${index})">Add ao carrinho</button>
             </div>
           </div>
         </div>
@@ -47,12 +48,11 @@ let btnNext = document.querySelector('.next');
 
 btnNext.addEventListener('click', () => {
   dishes.appendChild(box[0]);
-  box = document.querySelectorAll('.box');
+  box = document.querySelectorAll('.dishes > .box');
 });
 
 btnPrevious.addEventListener('click', () => {
   const lastItem = box[box.length -1];
   dishes.insertBefore( lastItem, box[0]);
-  box = document.querySelectorAll('.box');
+  box = document.querySelectorAll('.dishes > .box');
 });
-

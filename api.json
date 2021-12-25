@@ -4,6 +4,7 @@
     "prato": "Macarronada",
     "stars": "./img/quatro-estrelas.svg",
     "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "regiao": "sudeste",
     "preco": 35.00
   },
   {
@@ -11,6 +12,7 @@
     "prato": "Batata Frita",
     "stars": "./img/tres-estrelas.svg",
     "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "regiao": "nordeste",
     "preco": 25.00
   },
   {
@@ -18,6 +20,7 @@
     "prato": "Feijoada",
     "stars": "./img/cinco-estrelas.svg",
     "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "regiao": "sudeste",
     "preco": 40.00
   },
   {
@@ -25,6 +28,7 @@
     "prato": "Tacacá",
     "stars": "./img/quatro-estrelas.svg",
     "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "regiao": "norte",
     "preco": 60.00
   },
   {
@@ -32,6 +36,7 @@
     "prato": "Buxada de Bode",
     "stars": "./img/tres-estrelas.svg",
     "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "regiao": "nordeste",
     "preco": 45.00
   },
   {
@@ -39,6 +44,7 @@
     "prato": "Pão de Queijo",
     "stars": "./img/cinco-estrelas.svg",
     "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "regiao": "sudeste",
     "preco": 15.00
   },
   {
@@ -46,6 +52,7 @@
     "prato": "Cuca",
     "stars": "./img/duas-estrelas.svg",
     "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "regiao": "sul",
     "preco": 30.00
   },
   {
@@ -53,6 +60,7 @@
     "prato": "Coxinha",
     "stars": "./img/cinco-estrelas.svg",
     "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "regiao": "sudeste",
     "preco": 10.00
   }
 ]
