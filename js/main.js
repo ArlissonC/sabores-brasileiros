@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const fetchData = async () => {
   try {
-    const response = await fetch('api.json');
+    const response = await fetch('pratos.json');
     const data = await response.json();
     loadDishes(data);
     menuDishes(data);

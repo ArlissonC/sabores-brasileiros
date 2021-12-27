@@ -105,6 +105,7 @@ li {
 .intro h1 {
   font-family: "Righteous", cursive;
   color: #252525;
+  letter-spacing: 1px;
   font-size: 6em;
   margin-bottom: 35px;
 }
@@ -171,6 +172,7 @@ li {
 .header-popular-dishes h2 {
   font-family: "Righteous", cursive;
   color: #252525;
+  letter-spacing: 1px;
   font-size: 2.25em;
 }
 
@@ -247,6 +249,7 @@ li {
 .box h4 {
   font-family: "Righteous", cursive;
   color: #252525;
+  letter-spacing: 1px;
   font-size: 1.5em;
   color: #5e3900;
   margin-bottom: 10px;
@@ -280,6 +283,7 @@ li {
 .add-cart span {
   font-family: "Righteous", cursive;
   color: #252525;
+  letter-spacing: 1px;
   font-size: 1.125em;
   color: #5e3900;
 }
@@ -287,6 +291,7 @@ li {
 .add-cart button {
   font-family: "Righteous", cursive;
   color: #252525;
+  letter-spacing: 1px;
   font-size: 0.625em;
   padding: 10px;
   border-radius: 50px;
@@ -319,9 +324,15 @@ li {
   border-radius: 50%;
 }
 
+.services-text {
+  -ms-flex-preferred-size: 450px;
+      flex-basis: 450px;
+}
+
 .services-text h2 {
   font-family: "Righteous", cursive;
   color: #252525;
+  letter-spacing: 1px;
   font-size: 2.25em;
   margin-top: 40px;
 }
@@ -334,7 +345,6 @@ li {
 }
 
 .services-list {
-  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,7 +358,9 @@ li {
       flex-wrap: wrap;
   font-family: "Righteous", cursive;
   color: #252525;
+  letter-spacing: 1px;
   font-size: 1.125em;
+  margin-top: 40px;
 }
 
 .services-list .list-1 li {
@@ -390,12 +402,13 @@ li {
 }
 
 .menu-dishes-main {
-  height: 930px;
+  margin-bottom: 200px;
 }
 
 .menu-dishes-main h2 {
   font-family: "Righteous", cursive;
   color: #252525;
+  letter-spacing: 1px;
   font-size: 2.25em;
   text-align: center;
   margin-bottom: 55px;
@@ -419,6 +432,7 @@ li {
 .buttons-menu button {
   font-family: "Righteous", cursive;
   color: #252525;
+  letter-spacing: 1px;
   font-size: 1.125em;
   padding: 5px 30px;
   background: #fff3e0;
@@ -453,5 +467,194 @@ li {
 
 .hidden {
   display: none;
+}
+
+.reserve {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 250px;
+}
+
+.reserve-texts h2 {
+  font-family: "Righteous", cursive;
+  color: #252525;
+  letter-spacing: 1px;
+  font-size: 2.25em;
+  margin-bottom: 15px;
+}
+
+.reserve-texts p {
+  font-family: "Roboto", sans-serif;
+  color: #252525;
+  font-size: 1.125em;
+  line-height: 1.3;
+}
+
+.reserve-texts button {
+  font-family: "Righteous", cursive;
+  color: #252525;
+  letter-spacing: 1px;
+  font-size: 1.125em;
+  margin-top: 30px;
+  padding: 10px 40px;
+  background: #fff3e0;
+  border: 1px solid #ffad23;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.reserve-img {
+  position: relative;
+  padding: 20px;
+  width: 450px;
+  height: 310px;
+  background: #fff3e0;
+}
+
+.reserve-img img {
+  position: absolute;
+  width: 500px;
+  right: 25px;
+}
+
+.newslatter {
+  margin-bottom: 200px;
+}
+
+.box-newslatter {
+  width: 100%;
+  height: 408px;
+  background: url(../img/bg-newslatter.png) no-repeat center;
+  padding: 100px 200px;
+  border-radius: 60px;
+}
+
+.box-newslatter h2 {
+  font-family: "Righteous", cursive;
+  color: #252525;
+  letter-spacing: 1px;
+  font-size: 2.25em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+}
+
+.form-newslatter {
+  position: relative;
+}
+
+.form-newslatter input {
+  font-family: "Righteous", cursive;
+  color: #252525;
+  letter-spacing: 1px;
+  font-size: 1.125em;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  padding: 20px 40px;
+}
+
+.form-newslatter button {
+  font-family: "Righteous", cursive;
+  color: #252525;
+  letter-spacing: 1px;
+  font-size: 1.125em;
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  padding: 15px 30px;
+  border-radius: 40px;
+  border: none;
+  background: #ffad23;
+  cursor: pointer;
+}
+
+.localization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 200px;
+}
+
+.box-localization h2 {
+  font-family: "Righteous", cursive;
+  color: #252525;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+.box-localization p {
+  font-family: "Righteous", cursive;
+  color: #252525;
+  letter-spacing: 1px;
+  font-size: 1.125em;
+  margin-bottom: 30px;
+}
+
+.box-localization p::after {
+  content: "";
+  width: 280px;
+  height: 3px;
+  display: block;
+  margin-top: 10px;
+  background: #252525;
+}
+
+.localization-img {
+  position: relative;
+  width: 340px;
+  height: 505px;
+  background: #fff3e0;
+  padding: 20px;
+}
+
+.localization-img img {
+  position: absolute;
+  right: 25px;
+}
+
+.footer {
+  padding: 25px 0;
+  background: #fff3e0;
+}
+
+.footer p {
+  font-family: "Roboto", sans-serif;
+  color: #252525;
+  font-size: 1.125em;
+  line-height: 2;
+}
+
+.footer p a {
+  font-weight: bold;
+  color: #252525;
 }
 /*# sourceMappingURL=style.css.map */

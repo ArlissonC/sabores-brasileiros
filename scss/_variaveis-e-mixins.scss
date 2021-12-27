@@ -10,6 +10,7 @@ $cor-branca: #fff;
 @mixin tipo-1($tamanho) {
   font-family: "Righteous", cursive;
   color: $cor-textos;
+  letter-spacing: 1px;
   @if $tamanho == 96 {
     font-size: 6em;
   } @else if $tamanho == 36 {
@@ -61,7 +62,6 @@ $cor-branca: #fff;
 }
 
 // Botões
-
 @mixin button-1 {
   width: 45px;
   height: 45px;

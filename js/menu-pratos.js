@@ -32,4 +32,3 @@ const filterSelect = region => {
     }
   });
 }
-

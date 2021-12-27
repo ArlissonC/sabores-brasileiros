@@ -1,0 +1,12 @@
+.footer {
+  padding: 25px 0;
+  background: $cor-primaria;
+  p {
+    @include tipo-2(18);
+    line-height: 2;
+    a {
+      font-weight: bold;
+      color: $cor-textos;
+    }
+  }
+}

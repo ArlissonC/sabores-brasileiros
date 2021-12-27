@@ -1,0 +1,36 @@
+.localization {
+  @include flex;
+  justify-content: space-around;
+  margin-bottom: 200px;
+}
+
+.box-localization {
+  h2 {
+    @include tipo-1(24);
+    margin-bottom: 50px;
+  }
+  p {
+    @include tipo-1(18);
+    margin-bottom: 30px;
+    &::after {
+      content: "";
+      width: 280px;
+      height: 3px;
+      display: block;
+      margin-top: 10px;
+      background: $cor-textos;
+    }
+  }
+}
+
+.localization-img {
+  position: relative;
+  width: 340px;
+  height: 505px;
+  background: $cor-primaria;
+  padding: 20px;
+  img {
+    position: absolute;
+    right: 25px;
+  }
+}
