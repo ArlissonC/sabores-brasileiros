@@ -12,8 +12,12 @@ const menuDishes = data => {
             <p>${item.descricao}</p>
             <div class="add-cart">
               <span>${item.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span>
-              <button type="button" onclick="addCart('${item.prato}', 
-              '${item.preco}', ${index})">Add ao carrinho</button>
+              <div class="buttons-input">
+                <button class="btn-sub" type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">-</button>
+                <input id="qtd${index}" type="number" name="number" min="1" max="100" value="1">
+                <button class="btn-add" type="button" onclick="this.parentNode.querySelector('[type=number]').stepUp();">+</button>
+              </div>
+              <button class="cart" onclick="addCart('${item.prato}', document.getElementById('qtd${index}').value, '${item.preco}', ${index})"></button>
             </div>
           </div>
         </div>
