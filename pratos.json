@@ -62,5 +62,13 @@
     "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
     "regiao": "sudeste",
     "preco": 10.00
+  },
+  {
+    "img": "./img/baiao-de-dois.png",
+    "prato": "Baião de Dois",
+    "stars": "./img/cinco-estrelas.svg",
+    "descricao": "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.",
+    "regiao": "nordeste",
+    "preco": 35.00
   }
 ]
