@@ -1,0 +1,87 @@
+.page-cart {
+  width: 100%;
+  height: auto;
+  background: $cor-branca;
+  padding: 0 90px;
+  h2 {
+    @include tipo-1(36);
+    text-align: center;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      display: block;
+      margin: 5px 0;
+      background: $cor-primaria;
+    }
+  }
+}
+
+.itens {
+  margin-top: 40px;
+  li {
+    @include flex;
+    h3 {
+      @include tipo-1(36);
+      width: 250px;
+    }
+    .qtd-cart {
+      @include tipo-1(24);
+      width: 65px;
+      height: 50px;
+      text-align: center;
+      padding-top: 10px;
+      background: $cor-primaria;
+      border-radius: 10px;
+    }
+    .price-cart {
+      @include tipo-1(24);
+      width: 90px;
+    }
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      display: block;
+      margin: 25px 0;
+      background: $cor-textos;
+    }
+  }
+}
+
+.total-cart {
+  @include tipo-1(36);
+  text-align: right;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin: 15px 0;
+    background: $cor-textos;
+  }
+}
+
+.buttons-clean-continue {
+  @include flex;
+  justify-content: flex-end;
+  gap: 30px;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  .clear-cart {
+    @include tipo-1(18);
+    color: $cor-vermelha;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .continue {
+    @include tipo-1(24);
+    padding: 10px 15px;
+    color: $cor-textos;
+    background: $cor-primaria;
+    border: 1px solid $cor-secundaria;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}

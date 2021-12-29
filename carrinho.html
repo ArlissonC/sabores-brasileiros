@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scss/style.css">
+  <title>Carrinho</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="container header">
+    <a href="index.html"><img src="img/logo.svg" alt="Sabores Brasileiros"></a>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">
+            <div class="cart"></div>
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Carrinho -->
+  <section class="container">
+    <div class="page-cart">
+      <h2>Carrinho</h2>
+      <ul class="itens">
+      </ul>
+      <div class="total-cart"></div>
+      <div class="buttons-clean-continue">
+        <button class="clear-cart" onclick=" localStorage.clear(); location.reload();">Limpar Carrinho</button>
+        <button class="continue">Continuar Compra</button>
+      </div>
+    </div>
+  </section>
+  <script src="js/cart.js"></script>
+</body>
+
+</html>
