@@ -15,6 +15,9 @@
     text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
     margin-bottom: 50px;
   }
+  @include d(tablet) {
+    padding: 90px 80px;
+  }
 }
 
 .form-newslatter {

@@ -31,7 +31,13 @@
     border: 1px solid $cor-secundaria;
     border-radius: 50px;
     cursor: pointer;
-    margin-bottom: 70px;
+  }
+  @include d(tablet) {
+    justify-content: center;
+    gap: 20px;
+    button {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -39,10 +45,14 @@
   @include flex;
   justify-content: flex-start;
   gap: 18px;
+  margin-top: 70px;
   .box {
     width: 348px;
     margin-left: 0;
     margin-bottom: 30px;
+  }
+  @include d(tablet) {
+    justify-content: center;
   }
 }
 

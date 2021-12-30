@@ -1,6 +1,7 @@
 let menu = document.querySelector('.menu-dishes');
 const buttonsMenu = document.querySelectorAll('.btn');
 
+// Renderiza o Menu
 const menuDishes = data => {
   data.forEach((item, index)=> {
     menu.innerHTML += `
@@ -25,6 +26,7 @@ const menuDishes = data => {
   });
 }
 
+// Filtra por região
 const filterSelect = region => {
   if (region == "all") {
     region = "";

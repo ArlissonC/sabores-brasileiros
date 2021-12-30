@@ -2,6 +2,7 @@ let total = 0;
 let valor = 0;
 let itens = document.querySelector(".itens");
 
+// Puxando os itens do localStorage e renderizando
 for(let i = 1; i<=99; i++) {
   var prod = localStorage.getItem("produto" + i + ""); 
   if (prod != null) {	

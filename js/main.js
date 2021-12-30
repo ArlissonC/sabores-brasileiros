@@ -1,10 +1,9 @@
-// Slide pratos populares
 let dishes = document.querySelector('.dishes');
 
+// Consumindo API dos pratos
 document.addEventListener('DOMContentLoaded', () => {
   fetchData();
 })
-
 const fetchData = async () => {
   try {
     const response = await fetch('pratos.json');
@@ -16,6 +15,7 @@ const fetchData = async () => {
   }
 }
 
+// Renderiza os pratos populares
 const loadDishes = data => {
   data.forEach((item, index) => {
     dishes.innerHTML += `
@@ -41,6 +41,7 @@ const loadDishes = data => {
   })
 }
 
+// Slide pratos populares
 let btnPrevious = document.querySelector('.previous');
 let btnNext = document.querySelector('.next');
 
@@ -56,6 +57,7 @@ btnPrevious.addEventListener('click', () => {
 });
 
 
+// Adiciona os itens ao carrinho
 const addCart = (produto, qtd, valor, posicao) => {
   localStorage.setItem("produto" + posicao, produto);
   localStorage.setItem("qtd" + posicao, qtd);

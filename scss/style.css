@@ -22,7 +22,7 @@ li {
 }
 
 .container {
-  padding: 0 10px;
+  padding: 0 20px;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -120,6 +120,7 @@ li {
   color: #252525;
   font-size: 1.125em;
   max-width: 630px;
+  margin-bottom: 40px;
 }
 
 .dish-intro {
@@ -481,7 +482,18 @@ li {
   border: 1px solid #ffad23;
   border-radius: 50px;
   cursor: pointer;
-  margin-bottom: 70px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .buttons-menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .buttons-menu button {
+    margin-bottom: 20px;
+  }
 }
 
 .menu-dishes {
@@ -500,12 +512,21 @@ li {
       -ms-flex-pack: start;
           justify-content: flex-start;
   gap: 18px;
+  margin-top: 70px;
 }
 
 .menu-dishes .box {
   width: 348px;
   margin-left: 0;
   margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .menu-dishes {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .hidden {
@@ -559,6 +580,12 @@ li {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .reserve-texts button {
+    margin-bottom: 40px;
+  }
+}
+
 .reserve-img {
   position: relative;
   padding: 20px;
@@ -594,6 +621,12 @@ li {
   color: #fff;
   text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .box-newslatter {
+    padding: 90px 80px;
+  }
 }
 
 .form-newslatter {
