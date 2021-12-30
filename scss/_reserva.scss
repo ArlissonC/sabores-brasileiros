@@ -2,6 +2,9 @@
   @include flex;
   justify-content: space-around;
   margin-bottom: 250px;
+  @include d(mobile) {
+    margin-bottom: 200px;
+  }
 }
 
 .reserve-texts {
@@ -26,6 +29,9 @@
       margin-bottom: 40px;
     }
   }
+  @include d(mobile) {
+    margin-bottom: 40px;
+  }
 }
 
 .reserve-img {
@@ -38,5 +44,11 @@
     position: absolute;
     width: 500px;
     right: 25px;
+  }
+  @include d(mobile) {
+    height: 220px;
+    img {
+      right: 15px;
+    }
   }
 }

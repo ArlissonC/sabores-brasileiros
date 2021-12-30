@@ -22,7 +22,7 @@ li {
 }
 
 .container {
-  padding: 0 20px;
+  padding: 0 10px;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -54,6 +54,14 @@ li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .menu ul {
@@ -123,6 +131,12 @@ li {
   margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 767px) {
+  .intro {
+    margin-bottom: 80px;
+  }
+}
+
 .dish-intro {
   width: 390px;
   height: 390px;
@@ -150,6 +164,16 @@ li {
   left: 10px;
 }
 
+@media only screen and (max-width: 767px) {
+  .dish-intro {
+    height: 300px;
+  }
+  .dish-intro img {
+    width: 90%;
+    left: 5px;
+  }
+}
+
 .popular-dishes {
   overflow: hidden;
   margin-bottom: 240px;
@@ -174,6 +198,12 @@ li {
   margin: 0;
 }
 
+@media only screen and (max-width: 767px) {
+  .popular-dishes {
+    margin-bottom: 150px;
+  }
+}
+
 .header-popular-dishes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,6 +224,13 @@ li {
   color: #252525;
   letter-spacing: 1px;
   font-size: 2.25em;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-popular-dishes h2 {
+    font-size: 1.875em;
+    margin-bottom: 20px;
+  }
 }
 
 .buttons-slide {
@@ -245,8 +282,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   width: 3650px;
   gap: 20px;
 }
@@ -280,6 +315,12 @@ li {
   color: #252525;
   font-size: 0.875em;
   margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .box {
+    width: 330px;
+  }
 }
 
 .img img {
@@ -343,6 +384,12 @@ li {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 250px;
+}
+
+@media only screen and (max-width: 767px) {
+  .services {
+    margin-bottom: 180px;
+  }
 }
 
 .img-services img {
@@ -496,6 +543,20 @@ li {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .buttons-menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+  .buttons-menu button {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
 .menu-dishes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -550,6 +611,12 @@ li {
   margin-bottom: 250px;
 }
 
+@media only screen and (max-width: 767px) {
+  .reserve {
+    margin-bottom: 200px;
+  }
+}
+
 .reserve-texts h2 {
   font-family: "Righteous", cursive;
   color: #252525;
@@ -586,6 +653,12 @@ li {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .reserve-texts {
+    margin-bottom: 40px;
+  }
+}
+
 .reserve-img {
   position: relative;
   padding: 20px;
@@ -598,6 +671,15 @@ li {
   position: absolute;
   width: 500px;
   right: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .reserve-img {
+    height: 220px;
+  }
+  .reserve-img img {
+    right: 15px;
+  }
 }
 
 .newslatter {
@@ -626,6 +708,17 @@ li {
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .box-newslatter {
     padding: 90px 80px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .box-newslatter {
+    padding: 50px 0;
+    height: auto;
+  }
+  .box-newslatter h2 {
+    font-size: 1.875em;
+    color: #fff;
   }
 }
 
@@ -660,6 +753,28 @@ li {
   border: none;
   background: #ffad23;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .form-newslatter {
+    padding: 0 10px;
+  }
+  .form-newslatter input {
+    font-family: "Righteous", cursive;
+    color: #252525;
+    letter-spacing: 1px;
+    font-size: 0.625em;
+    height: 60px;
+    padding: 20px;
+  }
+  .form-newslatter button {
+    font-family: "Righteous", cursive;
+    color: #252525;
+    letter-spacing: 1px;
+    font-size: 0.625em;
+    top: 9px;
+    right: 20px;
+  }
 }
 
 .localization {
@@ -704,6 +819,12 @@ li {
   background: #252525;
 }
 
+@media only screen and (max-width: 767px) {
+  .box-localization {
+    margin-bottom: 20px;
+  }
+}
+
 .localization-img {
   position: relative;
   width: 340px;
@@ -715,6 +836,16 @@ li {
 .localization-img img {
   position: absolute;
   right: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .localization-img {
+    width: 240px;
+    height: 340px;
+  }
+  .localization-img img {
+    width: 95%;
+  }
 }
 
 .footer {

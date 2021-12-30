@@ -21,6 +21,9 @@
       background: $cor-textos;
     }
   }
+  @include d(mobile) {
+    margin-bottom: 20px;
+  }
 }
 
 .localization-img {
@@ -32,5 +35,12 @@
   img {
     position: absolute;
     right: 25px;
+  }
+  @include d(mobile) {
+    width: 240px;
+    height: 340px;
+    img {
+      width: 95%;
+    }
   }
 }

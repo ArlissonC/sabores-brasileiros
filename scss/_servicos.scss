@@ -3,6 +3,9 @@
   justify-content: space-around;
   align-items: flex-start;
   margin-bottom: 250px;
+  @include d(mobile) {
+    margin-bottom: 180px;
+  }
 }
 
 .img-services img {

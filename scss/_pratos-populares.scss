@@ -16,6 +16,9 @@
     appearance: none;
     margin: 0;
   }
+  @include d(mobile) {
+    margin-bottom: 150px;
+  }
 }
 
 .header-popular-dishes {
@@ -23,6 +26,12 @@
   margin: 55px 0;
   h2 {
     @include tipo-1(36);
+  }
+  @include d(mobile) {
+    h2 {
+      font-size: 1.875em;
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -48,7 +57,6 @@
 
 .dishes {
   display: flex;
-  flex-wrap: nowrap;
   width: 3650px;
   gap: 20px;
 }
@@ -72,6 +80,9 @@
   p {
     @include tipo-2(14);
     margin-bottom: 25px;
+  }
+  @include d(mobile) {
+    width: 330px;
   }
 }
 

@@ -18,6 +18,14 @@
   @include d(tablet) {
     padding: 90px 80px;
   }
+  @include d(mobile) {
+    padding: 50px 0;
+    height: auto;
+    h2 {
+      font-size: 1.875em;
+      color: $cor-branca;
+    }
+  }
 }
 
 .form-newslatter {
@@ -42,5 +50,18 @@
     border: none;
     background: $cor-secundaria;
     cursor: pointer;
+  }
+  @include d(mobile) {
+    padding: 0 10px;
+    input {
+      @include tipo-1(10);
+      height: 60px;
+      padding: 20px;
+    }
+    button {
+      @include tipo-1(10);
+      top: 9px;
+      right: 20px;
+    }
   }
 }

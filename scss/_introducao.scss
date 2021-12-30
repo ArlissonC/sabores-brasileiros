@@ -3,6 +3,9 @@
   padding-bottom: 30px;
   @include flex;
   margin-bottom: 50px;
+  @include d(mobile) {
+    justify-content: center;
+  }
 }
 
 .menu {
@@ -37,6 +40,9 @@
     max-width: 630px;
     margin-bottom: 40px;
   }
+  @include d(mobile) {
+    margin-bottom: 80px;
+  }
 }
 
 .dish-intro {
@@ -50,5 +56,12 @@
   img {
     position: absolute;
     left: 10px;
+  }
+  @include d(mobile) {
+    height: 300px;
+    img {
+      width: 90%;
+      left: 5px;
+    }
   }
 }
