@@ -2,7 +2,7 @@
  <br>Sabores Brasileiros
 </h2>
 
-<h4 align="center"><a href="https://arlissonc.github.io/bezerra-eletronica/">Clique para visitar o projeto</a></h4>
+<h4 align="center"><a href="https://arlissonc.github.io/sabores-brasileiros/">Clique para visitar o projeto</a></h4>
 <img src="https://i.imgur.com/qQszEX3.png">
 
 
