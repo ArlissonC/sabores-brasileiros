@@ -15,6 +15,13 @@
       background: $cor-primaria;
     }
   }
+  @include d(mobile) {
+    padding: 0 40px;
+    h2 {
+      @include tipo-1(24);
+      padding: 10px 0;
+    }
+  }
 }
 
 .itens {
@@ -45,6 +52,17 @@
       display: block;
       margin: 25px 0;
       background: $cor-textos;
+    }
+  }
+  @include d(mobile) {
+    li {
+      h3 {
+        @include tipo-1(18);
+        margin-bottom: 20px;
+      }
+      .qtd-cart {
+        @include tipo-1(18);
+      }
     }
   }
 }
@@ -83,5 +101,11 @@
     border: 1px solid $cor-secundaria;
     border-radius: 10px;
     cursor: pointer;
+  }
+  @include d(mobile) {
+    justify-content: center;
+    .continue {
+      @include tipo-1(18);
+    }
   }
 }
