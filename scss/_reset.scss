@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+:target {
+  scroll-margin-top: 1rem;
+}
+
 body {
   background: $cor-terciaria;
 }

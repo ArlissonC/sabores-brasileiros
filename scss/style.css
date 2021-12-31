@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
+:target {
+  scroll-margin-top: 1rem;
+}
+
 body {
   background: #fffcf7;
 }
@@ -867,6 +871,41 @@ li {
 .footer p a {
   font-weight: bold;
   color: #252525;
+}
+
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.redes-sociais {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100px;
+  gap: 20px;
+}
+
+.redes-sociais img {
+  width: 40px;
 }
 
 .page-cart {

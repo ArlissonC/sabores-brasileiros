@@ -10,3 +10,17 @@
     }
   }
 }
+
+.footer-box {
+  @include flex;
+  gap: 20px;
+}
+
+.redes-sociais {
+  @include flex;
+  width: 100px;
+  gap: 20px;
+  img {
+    width: 40px;
+  }
+}
