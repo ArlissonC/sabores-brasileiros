@@ -945,11 +945,11 @@ li {
   }
 }
 
-.itens {
+.items {
   margin-top: 40px;
 }
 
-.itens li {
+.items li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -963,7 +963,7 @@ li {
   flex-wrap: wrap;
 }
 
-.itens li h3 {
+.items li h3 {
   font-family: "Righteous", cursive;
   color: #252525;
   letter-spacing: 1px;
@@ -971,7 +971,7 @@ li {
   width: 250px;
 }
 
-.itens li .qtd-cart {
+.items li .qtd-cart {
   font-family: "Righteous", cursive;
   color: #252525;
   letter-spacing: 1px;
@@ -984,7 +984,7 @@ li {
   border-radius: 10px;
 }
 
-.itens li .price-cart {
+.items li .price-cart {
   font-family: "Righteous", cursive;
   color: #252525;
   letter-spacing: 1px;
@@ -992,7 +992,7 @@ li {
   width: 90px;
 }
 
-.itens li::after {
+.items li::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -1001,19 +1001,34 @@ li {
   background: #252525;
 }
 
+.items li .delete-cart {
+  font-family: "Righteous", cursive;
+  color: #252525;
+  letter-spacing: 1px;
+  font-size: 1.125em;
+  color: #ff0000;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 767px) {
-  .itens li h3 {
+  .items li h3 {
     font-family: "Righteous", cursive;
     color: #252525;
     letter-spacing: 1px;
     font-size: 1.125em;
     margin-bottom: 20px;
   }
-  .itens li .qtd-cart {
+  .items li .qtd-cart {
     font-family: "Righteous", cursive;
     color: #252525;
     letter-spacing: 1px;
     font-size: 1.125em;
+    margin-right: 10px;
+  }
+  .items li .delete-cart {
+    margin-top: 15px;
   }
 }
 

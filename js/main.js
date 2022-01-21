@@ -56,12 +56,29 @@ btnPrevious.addEventListener('click', () => {
   box = document.querySelectorAll('.dishes > .box');
 });
 
-
+const getLocalStorage = () => JSON.parse(localStorage.getItem('dbCart')) || [];
+const setLocalStorage = (dbCart) => localStorage.setItem('dbCart', JSON.stringify(dbCart));
+ 
 // Adiciona os itens ao carrinho
 const addCart = (produto, qtd, valor, posicao) => {
-  localStorage.setItem("produto" + posicao, produto);
-  localStorage.setItem("qtd" + posicao, qtd);
+  const product = produto;
+  const amount = qtd;
   valor = valor * qtd;
-  localStorage.setItem("valor" + posicao, valor);
-  alert("Produto adicionado ao carrinho!");
+  const price = valor;
+  const position = posicao;
+  const dataObj = {product, amount, price, position}
+  const dbCart = getLocalStorage();
+  checkCart(dbCart, dataObj, position);
+}
+
+// Verifica se já existe no carrinho
+const checkCart = (array, dataObj, position) => {
+  const pos = array.map(e => e.position)
+  if (pos.indexOf(position) != -1) {
+    alert('Este produto já está no carrinho!');
+  } else {
+    alert('Produto adicionado ao carrinho!')
+    array.push(dataObj);
+    setLocalStorage(array);
+  }
 }

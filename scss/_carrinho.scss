@@ -24,7 +24,7 @@
   }
 }
 
-.itens {
+.items {
   margin-top: 40px;
   li {
     @include flex;
@@ -53,6 +53,13 @@
       margin: 25px 0;
       background: $cor-textos;
     }
+    .delete-cart {
+      @include tipo-1(18);
+      color: $cor-vermelha;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
   }
   @include d(mobile) {
     li {
@@ -62,6 +69,10 @@
       }
       .qtd-cart {
         @include tipo-1(18);
+        margin-right: 10px;
+      }
+      .delete-cart {
+        margin-top: 15px;
       }
     }
   }

@@ -1,23 +1,34 @@
 let total = 0;
-let valor = 0;
-let itens = document.querySelector(".itens");
+let items = document.querySelector(".items");
 
-// Puxando os itens do localStorage e renderizando
-for(let i = 0; i<=99; i++) {
-  var prod = localStorage.getItem("produto" + i + ""); 
-  if (prod != null) {	
-    itens.innerHTML += `
-    <li>
-      <h3>${localStorage.getItem("produto" + i)}</h3>
-      <span class="qtd-cart">${localStorage.getItem("qtd" + i)}</span>
-      <span class="price-cart">R$ ${localStorage.getItem("valor" + i)}</span>
-    </li>
-    `
-    
-    valor = parseFloat(localStorage.getItem("valor" + i)); 
-    total += valor;
-  } 
-} 
 
-document.querySelector(".total-cart").innerHTML = total.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}); 
+const getLocalStorage = () => JSON.parse(localStorage.getItem('dbCart')) || [];
+const setLocalStorage = (dbCart) => localStorage.setItem('dbCart', JSON.stringify(dbCart));
+const dbItems = getLocalStorage();
 
+// Puxando os items do localStorage e renderizando
+const renderItem = (item, index) => {
+  items.innerHTML += `
+  <li>
+  <h3>${item.product}</h3>
+  <span class="qtd-cart">${item.amount}</span>
+  <span class="price-cart">R$ ${item.price}</span>
+  <button class="delete-cart" onclick="deleteProduct(${index})">Remover</button>
+</li>
+  `
+  total += item.price;
+  document.querySelector(".total-cart").innerHTML = total.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}); 
+}
+
+const deleteProduct = (index) => {
+  dbItems.splice(index, 1);
+  setLocalStorage(dbItems);
+  location.reload();
+}
+
+
+const getItems = () => {
+  dbItems.forEach((item, index) => renderItem(item, index));
+}
+
+getItems();
