@@ -1,7 +1,7 @@
 let total = 0;
 let items = document.querySelector(".items");
 
-
+// LocalStorage
 const getLocalStorage = () => JSON.parse(localStorage.getItem('dbCart')) || [];
 const setLocalStorage = (dbCart) => localStorage.setItem('dbCart', JSON.stringify(dbCart));
 const dbItems = getLocalStorage();
@@ -20,13 +20,14 @@ const renderItem = (item, index) => {
   document.querySelector(".total-cart").innerHTML = total.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}); 
 }
 
+// Deleta o produto
 const deleteProduct = (index) => {
   dbItems.splice(index, 1);
   setLocalStorage(dbItems);
   location.reload();
 }
 
-
+// Puxando itens LocalStorage
 const getItems = () => {
   dbItems.forEach((item, index) => renderItem(item, index));
 }

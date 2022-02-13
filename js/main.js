@@ -1,4 +1,4 @@
-let dishes = document.querySelector('.dishes');
+const dishes = document.querySelector('.dishes');
 
 // Consumindo API dos pratos
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,6 +10,7 @@ const fetchData = async () => {
     const data = await response.json();
     loadDishes(data);
     menuDishes(data);
+    filterDishes(data);
   } catch (error) {
     console.log(error);
   }
@@ -17,11 +18,13 @@ const fetchData = async () => {
 
 // Renderiza os pratos populares
 const loadDishes = data => {
+  let elements = '';
   data.forEach((item, index) => {
-    dishes.innerHTML += `
+    elements += `
       <div class="box">
-        <div class="img">
-          <img src="${item.img}" alt="">
+          <div class="img">
+            <img src="${item.img}" alt="">
+          </div>
           <h4>${item.prato}</h4>
           <img src="${item.stars}" alt="">
           <p>${item.descricao}</p>
@@ -34,9 +37,9 @@ const loadDishes = data => {
             </div>
             <button class="cart" onclick="addCart('${item.prato}', document.getElementById('qtd${index}').value, '${item.preco}', ${index})"></button>
           </div>
-        </div>
       </div>
     `;
+    dishes.innerHTML = elements;
     box = document.querySelectorAll('.box');
   })
 }
@@ -56,6 +59,7 @@ btnPrevious.addEventListener('click', () => {
   box = document.querySelectorAll('.dishes > .box');
 });
 
+// LocalStorage
 const getLocalStorage = () => JSON.parse(localStorage.getItem('dbCart')) || [];
 const setLocalStorage = (dbCart) => localStorage.setItem('dbCart', JSON.stringify(dbCart));
  

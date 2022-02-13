@@ -1,13 +1,15 @@
-let menu = document.querySelector('.menu-dishes');
+const menu = document.querySelector('.menu-dishes');
 const buttonsMenu = document.querySelectorAll('.btn');
 
 // Renderiza o Menu
 const menuDishes = data => {
+  let elements = '';
   data.forEach((item, index)=> {
-    menu.innerHTML += `
+    elements += `
       <div class="box ${item.regiao}">
-        <div class="img">
-          <img src="${item.img}" alt="">
+          <div class="img">
+            <img src="${item.img}" alt="">
+          </div>
           <h4>${item.prato}</h4>
           <img src="${item.stars}" alt="">
           <p>${item.descricao}</p>
@@ -20,21 +22,23 @@ const menuDishes = data => {
             </div>
             <button class="cart" onclick="addCart('${item.prato}', document.querySelector('.qtd${index}').value, '${item.preco}', ${index})"></button>
           </div>
-        </div>
       </div>
     `
+    menu.innerHTML = elements;
   });
 }
 
 // Filtra por região
-const filterSelect = region => {
-  if (region == "all") {
-    region = "";
-  }
-  document.querySelectorAll('.menu-dishes > .box').forEach(item => {
-    item.classList.remove('hidden');
-    if (!(item.className.indexOf(region) > -1)) {
-      item.classList.add('hidden');
-    }
-  });
+const filterDishes = data => {
+  buttonsMenu.forEach(item => {
+    item.addEventListener('click', e => {
+      const regionTarget = e.target.value;
+      if (regionTarget === '') {
+        menuDishes(data)
+      } else {
+        const arrayFilter = data.filter(item => item.regiao === regionTarget) 
+        menuDishes(arrayFilter)
+      }
+    })
+  })
 }
